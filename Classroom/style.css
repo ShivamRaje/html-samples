@@ -1,13 +1,7 @@
-h1{
-    color:red;
-}
 p{
-    color:blue;
+    text-align: center;
 }
-button{
-    color:yellow;
-    background-color: green;
-}
-body{
-    background-color: rgb(255,255,0);
+h1{
+    text-align:center;
+    text-decoration:underline;
 }
