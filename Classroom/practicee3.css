@@ -1,0 +1,23 @@
+#first{
+    
+    width: 100px;
+    border: 5px double black;
+}
+#one{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: red;
+}
+#two{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: yellow;
+}
+#three{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: green;
+}
