@@ -1,5 +1,6 @@
-let name="Tony Stark";
-let age=34;
-
-console.log(name);
-console.log(age);
+const student={
+    fullName:"Shivam Raje",
+    age:20,
+    cgpa:8.18
+};
+console.log(student.age)
