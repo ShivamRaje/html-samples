@@ -63,6 +63,8 @@
 // };
 // let output=`This  is a  ${obj.name} and price is ${obj.price}`
 // console.log(output);
+//Example
+
 
 let username=prompt("Enter user name ");
 username=username.trim();
