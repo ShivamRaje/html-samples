@@ -78,8 +78,30 @@
 //     return val%2===0;
 // });
 // console.log(filterNum);
-let array=[1,2,3,4];
-const output=array.reduce((result,current)=>{
-    return result+current;
+// let array=[1,2,3,4];
+// const output=array.reduce((result,current)=>{
+//     return result+current;
+// });
+// console.log(output);
+
+// let marks=[87,93,64,99,86];
+// const output=marks.filter((val)=>{
+//     return val>90;
+// });
+// console.log(output);
+
+let n=prompt("Enter a number");
+let arr=[];
+for(let i=1;i<=n;i++){
+    arr[i-1]=i;
+}
+console.log(arr);
+
+let sum=arr.reduce((prev,curr)=>{
+    return prev+curr;
 });
-console.log(output);
+
+let product =arr.reduce((prev,curr)=>{
+    return prev*curr
+});
+console.log(`Sum of an array ${sum} and product of an array is ${product}`);
