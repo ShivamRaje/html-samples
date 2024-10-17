@@ -1,7 +1,15 @@
-div{
+/* div{
     height: 100px;
     width: 100px;
     color: dodgerblue;
     background-color: burlywood;
     border: 1px solid black;
-}
+} */
+ .dark{
+    background-color: black;
+    color: antiquewhite;
+ }
+ .light{
+    background-color: white;
+    color: black;
+ }
