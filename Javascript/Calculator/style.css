@@ -54,11 +54,12 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    max-width: 200px;
+    max-width: 220px; /* Adjusted for better button alignment */
+    justify-content: space-between; /* Align the buttons properly */
 }
 
 .buttonclass button {
-    flex: 1 1 30%;
+    flex: 1 1 22%; /* Smaller width to fit the buttons neatly */
     padding: 15px;
     font-size: 1.5rem;
     cursor: pointer;
@@ -71,6 +72,31 @@ textarea {
 }
 
 .buttonclass button:hover {
+    background-color: #5a53d0;
+    transform: scale(1.05);
+}
+
+/* Styling for the AC and 0 button */
+.buttonclass .ac {
+    background-color: #ff7f50; /* Changed to coral color */
+    flex: 1 1 100%; /* AC button spans the full width */
+    padding: 15px;
+    font-size: 1.5rem;
+}
+
+.buttonclass .ac:hover {
+    background-color: #ff6347; /* Softer hover effect for AC button */
+    transform: scale(1.05);
+}
+
+.buttonclass .zero {
+    flex: 1 1 45%; /* Make '0' button wider */
+    padding: 15px;
+    font-size: 1.5rem;
+    background-color: #6c63ff;
+}
+
+.buttonclass .zero:hover {
     background-color: #5a53d0;
     transform: scale(1.05);
 }
