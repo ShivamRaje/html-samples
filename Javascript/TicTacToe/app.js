@@ -16,6 +16,7 @@ const winPatterns=[
     [6,7,8]
 ];
 
+
 const resetGame=()=>{
     turnO=true;
     enableBoxes();
@@ -58,6 +59,13 @@ const showWinner=(winner)=>{
     disableBoxes();
 };
 
+
+const losseWinnner=()=>{
+    msg.innerText=`Opps!, Games is Drwan `;
+    msgContainer.classList.remove("hide");
+    enableBoxes();
+};
+let totallength=0;
 const checkWinner=()=>{
     for(let pattern of winPatterns){
         let posVal1= boxes[pattern[0]].innerText;
@@ -68,9 +76,16 @@ const checkWinner=()=>{
             if(posVal1===posVal2 && posVal2===posVal3){
                 showWinner(posVal1);
             }
+           
         }
     }
+    totallength++;
+    if (totallength===boxes.length) {
+        losseWinnner();
+    }
 };
+
+
 
 newGameBtn.addEventListener("click",resetGame);
 resetBtn.addEventListener("click",resetGame);
